@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 public class AppConfig {
     @Bean
     public Person myBean() {
-        return new Person("Upwork" , 15);
+        return new Person("Construction Injection" , 15);
     }
 }
 

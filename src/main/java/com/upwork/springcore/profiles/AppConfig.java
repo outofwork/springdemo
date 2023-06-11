@@ -6,6 +6,7 @@ import org.springframework.context.annotation.Profile;
 
 @Configuration
 class AppConfig {
+
     @Bean
     @Profile("development")
     public DataService developmentDataService() {

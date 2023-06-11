@@ -1,18 +1,28 @@
 package com.upwork.springcore.properties.valueannotation;
 
-import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Component
 public class Person {
-
-    @Value("Upwork")
     private String name;
-
-    @Value(15)
     private int age;
 
+    public void setName(String name) {
+        this.name = name;
+    }
 
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
 }
 
 

@@ -20,6 +20,6 @@ public class AppConfig {
 
     @Bean
     public ColorBean colorBean() {
-        return new ColorBean(redColor());
+        return new ColorBean(redColor()); // RedColor Bean is returned here
     }
 }

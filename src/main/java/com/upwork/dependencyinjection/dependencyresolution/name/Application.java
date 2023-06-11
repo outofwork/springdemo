@@ -1,14 +1,12 @@
 package com.upwork.dependencyinjection.dependencyresolution.name;
 
 import com.upwork.dependencyinjection.datamodel.ColorBean;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-@SpringBootApplication
+
 public class Application {
     public static void main(String[] args) {
-        ConfigurableApplicationContext context = SpringApplication.run(AppConfig.class, args);
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 
         ColorBean colorBean = context.getBean(ColorBean.class);
         colorBean.printColor();

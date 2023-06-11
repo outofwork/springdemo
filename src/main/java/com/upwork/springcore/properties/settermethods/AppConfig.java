@@ -5,12 +5,13 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class AppConfig {
+
     @Bean
-    public Person myBean() {
+    public Person person() {
         Person person = new Person();
-        person.setName("Upwork");
-        person.setAge(15);
-        return new Person();
+        person.setName("Setter Methods");
+        person.setAge(30);
+        return person;
     }
 }
 

@@ -21,6 +21,7 @@ public class Application {
         } catch (Exception e) {
             System.out.println("Exception: " + e.getMessage());
         }
+
         System.out.println("------------------------\n");
 
         context.close();
